@@ -1,0 +1,410 @@
+body{
+  background-color: #232323;
+  margin: 0;
+  line-height: 1.5;
+  font-family: MontserratLight;
+  color: white;
+}
+h5, h6{
+  font-weight: normal;
+}
+button, a{
+  cursor: pointer;
+}
+a{
+  text-transform: uppercase;
+}
+button{
+  outline: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url('../fonts/Raleway-Bold.ttf');
+}
+@font-face {
+  font-family: MontserratLight;
+  src: url('../fonts/Montserrat-Light.ttf');
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+.btn-elegant{
+  font-family: MontserratLight;
+  background-color: transparent;
+  color: #c5a47e;
+  border: 1px solid #c5a47e;
+}
+.btn-cream{
+  font-family: MontserratMedium;
+  background-color: #c5a47e;
+  color: white;
+  border: none;
+}
+.text-center{
+  text-align: center;
+}
+.panel-title{
+  text-transform: uppercase;
+  font-family: RalewayBold;
+  letter-spacing: 3px;
+}
+.panel-title span{
+  color: #c5a47e;
+}
+header{
+  width: 100%;
+  background-color: #171717;
+  padding: 30px 20%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-family: RalewayBold;
+}
+header button{
+  padding: 5px;
+  border: 1px solid #c5a47e;
+  color: white;
+  font-size: 10px;
+}
+header .btn-eng{
+  background-color: #c5a47e;
+}
+header .btn-ind{
+  background-color: transparent;
+  margin-left: -5px;
+}
+.header-content{
+  text-transform: uppercase;
+}
+.header-content a{
+  margin-left: 30px;
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+.main-panel{
+  display: table;
+}
+.main-panel__logo{
+  width: 17.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 45px;
+  box-sizing: border-box;
+  background-color: #232323;
+}
+.main-panel__logo .img-vision{
+  width: 100%;
+}
+.main-panel__logo .img-logo{
+  width: 60%;
+  margin: 30px 20%;
+}
+.main-panel .img-vision-overlay{
+  opacity: 0.5;
+  position: absolute;
+  top: 180px;
+  width: 25%;
+}
+.main-panel__button{
+  position: absolute;
+  top: 250px;
+  left: 10%;
+  margin-left: 30px;
+  color: white;
+  font-family: MontserratMedium;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+.main-panel__button span{
+  color: #c5a47e;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.main-panel__sidebar{
+  width: 10%;
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+  position: relative;
+  padding-bottom: 30px;
+}
+.main-panel__sidebartext{
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100%;
+  bottom: 330px;
+}
+.main-panel__sidebartext h6{
+  font-family: MontserratMedium;
+  font-size: 8px;
+  letter-spacing: 7px;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.main-panel__sidebarline{
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100%;
+  bottom: 220px;
+}
+.main-panel__sidebarline hr{
+  width: 75px;
+  border-color: #646464;
+}
+.main-panel__sidebar img{
+  width: 20px;
+  margin-top: 30px;
+}
+.main-panel__content{
+  width: 90%;
+  display: table-cell;
+}
+.main-panel__content img{
+  width: 100%;
+}
+.main-panel__content div{
+  position: absolute;
+  top: 250px;
+  text-align: right;
+  right: 20%;
+}
+.main-panel__content h1{
+  font-size: 50px;
+  letter-spacing: 15px;
+  margin: 0 -15px 20px 0;
+}
+.main-panel__content h5{
+  font-family: MontserratLight;
+  color: white;
+  width: 40%;
+  margin: 0 0 35px 60%;
+}
+.main-panel__content button{
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.introduction-panel{
+  margin: 100px 0;
+}
+.introduction-panel__content{
+  display: table;
+}
+.introduction-panel__logo{
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.introduction-panel__logo div{
+  width: 100%;
+  padding: 0 10% 0 40%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.introduction-panel__logo .img-logo{
+  width: 20%;
+  display: block;
+  margin: 0 40% 20px;
+}
+.introduction-panel__logo .img-vision{
+  width: 50%;
+  display: block;
+  margin: 0 25%;
+}
+.introduction-panel__description{
+  width: 50%;
+  display: table-cell;
+}
+.introduction-panel__description div{
+  width: 100%;
+  padding: 0 40% 0 30px;
+  box-sizing: border-box;
+}
+.product-panel__content{
+  display: table;
+  position: relative;
+}
+.product-panel__content div{
+  width: 25%;
+  display: table-cell;
+  position: relative;
+}
+.product-panel__content div a{
+  font-family: MontserratMedium;
+  position: absolute;
+  bottom: 75px;
+  left: -40px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: white;
+  transform: rotate(-90deg);
+}
+.product-panel__content img{
+  width: 100%;
+}
+.product-panel__button{
+  position: absolute;
+  top: 50%;
+  font-size: 10px;
+}
+.product-panel__button span{
+  color: #c5a47e;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.product-panel__button.prev{
+  left: 15px;
+}
+.product-panel__button.next{
+  right: 15px;
+}
+.story-panel{
+  display: table;
+  margin: 50px 0;
+}
+.story-panel__content{
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.story-panel__content div{
+  width: 100%;
+  padding: 0 25%;
+  box-sizing: border-box;
+}
+.story-panel__image{
+  width: 50%;
+  display: table-cell;
+}
+.story-panel__image img{
+  width: 100%;
+}
+.map-panel{
+  display: table;
+}
+.map-panel__content{
+  width: 45%;
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url('../img/seat-makers.jpg');
+}
+.map-panel__content div{
+  width: 100%;
+  padding: 0 15% 0 25%;
+  box-sizing: border-box;
+}
+.map-panel__content h2{
+  margin-top: 0;
+}
+.map-panel__content h6{
+  color: #fefefe;
+}
+.map-panel__content input, .map-panel__content select{
+  width: 75%;
+  font-family: MontserratLight;
+  background-color: transparent;
+  color: #c5a47e;
+  border: 1px solid #c5a47e;
+  outline: none;
+  font-size: 10px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+.map-panel__content select{
+  color: white;
+  text-transform: uppercase;
+}
+.map-panel__content option{
+  color: initial;
+  font-size: 12px;
+}
+.map-panel__content input::placeholder{
+  color: #c5a47e;
+}
+.map-panel__content button{
+  display: block;
+}
+.map-panel__image{
+  width: 55%;
+  display: table-cell;  
+}
+.map-panel__image img{
+  width: 100%;  
+}
+.warranty-panel{
+  position: relative;
+}
+.warranty-panel img{
+  width: 100%;
+}
+.warranty-panel__wrapper{
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  margin: 0 auto;
+}
+.warranty-panel__content{
+  width: 50%;
+  background-color: #848484;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+}
+.warranty-panel__content input{
+  width: 70%;
+  margin-right: 5%;
+  outline: none;
+  border: none;
+  background-color: #363636;
+  color: white;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: MontserratLight;
+}
+.warranty-panel__content button{
+  width: 25%;
+  white-space: nowrap;
+}
+footer{
+  display: table;
+  width: 100%;
+  color: #8c8c8c;
+  padding: 15px 0;
+  border-top: 1px solid #c5a47e;
+  margin-top: -7px;
+  z-index: 1;
+}
+.footer-menu{
+  width: 70%;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-menu__wrapper img{
+  width: 30px;
+}
+.footer-menu__wrapper a{
+  color: #8c8c8c;
+  font-family: RalewayBold;
+  font-size: 10px;
+  margin: 0 10px;
+  letter-spacing: 1px;
+}
+.footer-menu__copyright{
+  font-size: 10px;
+}
