@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="header-lang">
         <button class="btn-eng">Eng</button>
         <button class="btn-ind">Ind</button>
       </div>
@@ -21,6 +21,27 @@
         <a>Contact</a>
       </div>
     </header>
+
+    <div class="topnav">
+      <div class="header-bar">        
+        <img src="img/logo.png" class="img-logo" alt="Logo">
+        <img src="img/vision.png" class="img-vision" alt="Vision">        
+        <div class="header-language">
+          <button class="btn-eng">Eng</button>
+          <button class="btn-ind">Ind</button>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="headerFunction()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <div id="header-links">
+        <a>Products</a>
+        <a>World of Vision</a>
+        <a>Blog</a>
+        <a>About</a>
+        <a>Contact</a>
+      </div>
+    </div>
 
     <div class="main-panel">
       <div class="main-panel__logo">
@@ -56,6 +77,30 @@
             Discover Their Story
           </button>
         </div>
+      </div>
+    </div>
+
+    <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1 class="panel-title">
+            Lorem Ipsum
+          </h1>
+          <h5>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  tempor incididunt ut labore et dolore ut enim ad minim veniam dolor sit
+          </h5>
+          <button class="btn-cream">
+            Discover Their Story
+          </button>
+        </div>
+        <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
 
@@ -106,6 +151,46 @@
         </div>
         <a class="product-panel__button prev"><span>&larr;</span> Prev</a>
         <a class="product-panel__button next">Next <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <div id="carouselProduct" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselProduct" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselProduct" data-slide-to="1"></li>
+        <li data-target="#carouselProduct" data-slide-to="2"></li>
+        <li data-target="#carouselProduct" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="position: relative;">
+          <img src="img/leather-gallardo.jpg" alt="Gallardo">
+          <span>
+            <a>See the Products</a>
+          </span>
+        </div>
+        <div class="carousel-item">
+          <img src="img/leather-mclaren.jpg" alt="McLaren">
+          <span>
+            <a>See the Products</a>
+          </span>
+        </div>
+        <div class="carousel-item">
+          <img src="img/leather-unknown.jpg" alt="Unknown">
+        </div>
+        <div class="carousel-item">
+          <img src="img/leather-bugatti.jpg" alt="Bugatti">
+          <span>
+            <a>See the Products</a>
+          </span>
+        </div>
+        <a class="carousel-control-prev" href="#carouselProduct" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProduct" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
     
@@ -175,6 +260,11 @@
     </div>
 
     <footer>
+      <div class="footer-social">        
+        <a><img src="img/social-instagram.png" alt="Instagram"></a>&nbsp;&nbsp;
+        <a><img src="img/social-phone.png" alt="Phone"></a>&nbsp;&nbsp;
+        <a><img src="img/social-message.png" alt="Message"></a>
+      </div>
       <div class="footer-menu">
         <div class="footer-menu__wrapper">
           <img src="img/logo.png" alt="Logo">
@@ -191,6 +281,20 @@
       </div>
     </footer>
 
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      function headerFunction() {
+        var x = document.getElementById("header-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

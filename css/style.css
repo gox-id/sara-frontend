@@ -7,6 +7,13 @@ body{
 }
 h5, h6{
   font-weight: normal;
+  line-height: 1.5;
+}
+h5{
+  font-size: 0.83em;
+}
+h6{
+  font-size: 0.67em;
 }
 button, a{
   cursor: pointer;
@@ -151,16 +158,18 @@ header .btn-ind{
   text-transform: uppercase;
   white-space: nowrap;
   font-weight: bold;
+  margin: 0;
 }
 .main-panel__sidebarline{
   position: absolute;
   transform: rotate(-90deg);
   width: 100%;
-  bottom: 220px;
+  bottom: 235px;
 }
 .main-panel__sidebarline hr{
   width: 75px;
   border-color: #646464;
+  margin: 0;
 }
 .main-panel__sidebar img{
   width: 20px;
@@ -297,6 +306,7 @@ header .btn-ind{
   display: table-cell;
   vertical-align: middle;
   background-image: url('../img/seat-makers.jpg');
+  padding: 30px 0;
 }
 .map-panel__content div{
   width: 100%;
@@ -338,7 +348,8 @@ header .btn-ind{
 }
 .map-panel__image{
   width: 55%;
-  display: table-cell;  
+  display: table-cell;
+  vertical-align: center;
 }
 .map-panel__image img{
   width: 100%;  
@@ -364,7 +375,7 @@ header .btn-ind{
   display: flex;
 }
 .warranty-panel__content input{
-  width: 70%;
+  width: 65%;
   margin-right: 5%;
   outline: none;
   border: none;
@@ -376,8 +387,7 @@ header .btn-ind{
   font-family: MontserratLight;
 }
 .warranty-panel__content button{
-  width: 25%;
-  white-space: nowrap;
+  width: 30%;
 }
 footer{
   display: table;
@@ -385,8 +395,6 @@ footer{
   color: #8c8c8c;
   padding: 15px 0;
   border-top: 1px solid #c5a47e;
-  margin-top: -7px;
-  z-index: 1;
 }
 .footer-menu{
   width: 70%;
@@ -407,4 +415,190 @@ footer{
 }
 .footer-menu__copyright{
   font-size: 10px;
+}
+.carousel.slide, .topnav, .footer-social{
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  h5{
+    font-size: 0.75em;
+  }
+  h6{
+    font-size: 0.5em;
+  }
+  button{
+    padding: 10px 15px;
+  }
+  header, .main-panel, .product-panel, .footer-menu__wrapper{
+    display: none;
+  }
+  .panel-title {
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.5;
+  }
+  .panel-title, .introduction-panel__logo div, .introduction-panel__description div, .story-panel__content div, .warranty-panel__wrapper{
+    padding: 0 30px;
+  }
+  .carousel.slide{
+    display: block;
+  }
+  .introduction-panel__logo{
+    margin: 15px 0;
+  }
+  .main-panel__sidebar, .main-panel__content, .introduction-panel__logo, .introduction-panel__description, .story-panel__content, .story-panel__image, .map-panel__content, .map-panel__image, .map-panel__content input, .map-panel__content select, .map-panel__content button, .warranty-panel__content, .warranty-panel__content input, .warranty-panel__content button{
+    display: block;
+    width: 100%;
+  }
+  .story-panel__content .panel-title{
+    padding: 0;
+  }
+  .story-panel__content div{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .introduction-panel__description div, .footer-menu__copyright{
+    text-align: center;
+  }
+  .map-panel__content div{
+    text-align: center;
+    padding: 30px;
+  }
+  .story-panel{
+    margin-bottom: 0;
+  }
+  .warranty-panel img{
+    display: none;
+  }
+  .warranty-panel__wrapper{
+    position: initial;
+  }
+  .footer-social{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-menu{
+    justify-content: center;
+  }
+  .introduction-panel, .warranty-panel__wrapper{
+    margin: 30px 0;
+  }
+  .warranty-panel__content{
+    padding: 15px;
+  }
+  .warranty-panel__content input{
+    margin-bottom: 5px;
+  }  
+  .topnav{
+    display: block;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    border-bottom: 1px solid black;
+  }  
+  .topnav #header-links{
+    display: none;
+    font-size: 12px;
+    padding: 10px 0;
+  }  
+  .topnav a{
+    color: white;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: block;
+  }  
+  .topnav a.icon{
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+  .header-bar{
+    background-color: #232323;
+    color: white;
+    padding: 15px;
+    position: relative;
+  }
+  .header-bar .img-logo{
+    width: 15%
+  }
+  .header-bar .img-vision{
+    width: 30%;
+  }
+  #carouselHeader .carousel-item{
+    background-image: url('../img/header-car.jpg');
+    background-size: auto 100%;
+    padding: 50px;
+    background-position: center;
+    text-align: center;
+  }
+  #carouselHeader h1{
+    padding: 0;
+  }
+  .header-language{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+  }
+  .header-language button{
+    padding: 5px;
+    border: 1px solid #c5a47e;
+    color: white;
+    font-size: 10px;
+  }
+  .header-language .btn-eng{
+    background-color: #c5a47e;
+  }
+  .header-language .btn-ind{
+    background-color: transparent;
+    margin-left: -5px;
+  }
+  #carouselProduct .carousel-item span{
+    font-family: MontserratMedium;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .carousel-item img{
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px){
+  .story-panel__content, .introduction-panel__logo{
+    display: table-cell;
+    width: 50%;
+  }
+  .map-panel__image{
+    padding: 0 30px;
+  }
+  #carouselProduct{
+    padding: 0 20%;
+  }
+  .header-bar .img-logo{
+    width: 7.5%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1024px){
+  .main-panel__sidebartext, .main-panel__sidebarline{
+    display: none;
+  }
+  .main-panel__content div {
+    top: 150px;
+    right: 10%;
+  }
+  .header-lang{
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+    top: 30px;
+  }
 }
